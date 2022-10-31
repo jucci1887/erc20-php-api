@@ -1,14 +1,8 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 11/21/2020
- * Time: 2:19 AM
- */
+namespace Jucci1887\Ethereum;
 
-namespace Lessmore92\Ethereum;
-
-use Lessmore92\Ethereum\Foundation\StandardERC20Token;
-use Lessmore92\Ethereum\Utils\Number;
+use Jucci1887\Ethereum\Foundation\StandardERC20Token;
+use Jucci1887\Ethereum\Utils\Number;
 
 
 class Token extends StandardERC20Token

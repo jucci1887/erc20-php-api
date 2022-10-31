@@ -1,14 +1,8 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 11/23/2020
- * Time: 2:09 AM
- */
-
-namespace Lessmore92\Ethereum\Foundation\Transaction;
+namespace Jucci1887\Ethereum\Foundation\Transaction;
 
 use kornrunner\Ethereum\Transaction as BaseTransaction;
-use Lessmore92\Ethereum\Foundation\Eth;
+use Jucci1887\Ethereum\Foundation\Eth;
 
 class Transaction
 {

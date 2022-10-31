@@ -1,16 +1,10 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 11/21/2020
- * Time: 2:19 AM
- */
+namespace Jucci1887\Ethereum\Foundation;
 
-namespace Lessmore92\Ethereum\Foundation;
-
-use Lessmore92\Ethereum\Foundation\Contracts\EventLogBuilderInterface;
-use Lessmore92\Ethereum\Foundation\Transaction\TransactionBuilder;
-use Lessmore92\Ethereum\Utils\Address;
-use Lessmore92\Ethereum\Utils\Number;
+use Jucci1887\Ethereum\Foundation\Contracts\EventLogBuilderInterface;
+use Jucci1887\Ethereum\Foundation\Transaction\TransactionBuilder;
+use Jucci1887\Ethereum\Utils\Address;
+use Jucci1887\Ethereum\Utils\Number;
 
 
 abstract class StandardERC20Token extends ERC20

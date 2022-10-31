@@ -1,14 +1,8 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 11/26/2020
- * Time: 5:03 AM
- */
-
-namespace Lessmore92\Ethereum\Foundation\Contracts;
+namespace Jucci1887\Ethereum\Foundation\Contracts;
 
 
-use Lessmore92\Ethereum\Foundation\ERC20;
+use Jucci1887\Ethereum\Foundation\ERC20;
 
 interface EventLogBuilderInterface
 {

@@ -1,11 +1,5 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 11/21/2020
- * Time: 5:20 AM
- */
-
-namespace Lessmore92\Ethereum\Utils;
+namespace Jucci1887\Ethereum\Utils;
 
 
 use phpseclib\Math\BigInteger;

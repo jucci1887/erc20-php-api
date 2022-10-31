@@ -1,11 +1,5 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 11/21/2020
- * Time: 2:19 AM
- */
-
-namespace Lessmore92\Ethereum\Foundation;
+namespace Jucci1887\Ethereum\Foundation;
 
 use Web3\Eth as BaseEth;
 use Web3\Web3;

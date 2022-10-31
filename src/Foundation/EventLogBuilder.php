@@ -1,14 +1,8 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 11/26/2020
- * Time: 5:03 AM
- */
-
-namespace Lessmore92\Ethereum\Foundation;
+namespace Jucci1887\Ethereum\Foundation;
 
 
-use Lessmore92\Ethereum\Foundation\Contracts\EventLogBuilderInterface;
+use Jucci1887\Ethereum\Foundation\Contracts\EventLogBuilderInterface;
 
 class EventLogBuilder implements EventLogBuilderInterface
 {

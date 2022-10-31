@@ -1,11 +1,5 @@
 <?php
-/**
- * User: Lessmore92
- * Date: 11/22/2020
- * Time: 5:26 AM
- */
-
-namespace Lessmore92\Ethereum\Utils;
+namespace Jucci1887\Ethereum\Utils;
 
 
 use Web3p\EthereumUtil\Util;
