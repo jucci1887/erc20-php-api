@@ -2,7 +2,7 @@
 namespace Jucci1887\Ethereum\Utils;
 
 
-use phpseclib3\Math\BigInteger;
+use phpseclib\Math\BigInteger;
 use Web3\Utils;
 
 class Number
