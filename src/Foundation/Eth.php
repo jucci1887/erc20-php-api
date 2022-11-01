@@ -22,4 +22,9 @@ class Eth extends EthBase
     {
         return (string)$this->call('sendRawTransaction', [$hash]);
     }
+
+    public function getEthBalance(string $address)
+    {
+        return (string)$this->call('getBalance',[$address,'latest']);
+    }
 }
