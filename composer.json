@@ -2,6 +2,7 @@
   "name": "jucci1887/erc20-php-api",
   "description": "This library provides simple way to interact with Ethereum ERC20 token. Thanks for Lessmore92",
   "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "jucci1887",
@@ -17,6 +18,7 @@
   "require": {
     "php": ">=7.1",
     "web3p/ethereum-util": "0.1.2",
+    "jucci1887/web3-php" : "1.0",
     "kornrunner/ethereum-offline-raw-tx": "0.2.4"
   }
 }
