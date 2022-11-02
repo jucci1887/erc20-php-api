@@ -29,8 +29,7 @@ class Number
 
     public static function fromWei($number, $unit)
     {
-        list($decimal, $precious) = Utils::fromWei($number, $unit);
-        return $decimal->toString() . '.' . $precious->toString();
+        return Utils::fromWei($number, $unit);
     }
 
     public static function toWei($number, $unit)
