@@ -9,7 +9,7 @@ class Token extends StandardERC20Token
 {
     protected $contractAddress;
 
-    public function __construct($contractAddress, $ethClient, $timeout = 3)
+    public function __construct($contractAddress, $ethClient, $timeout = 5)
     {
         $this->contractAddress = $contractAddress;
         parent::__construct($ethClient, $timeout);
