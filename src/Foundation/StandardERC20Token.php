@@ -57,10 +57,10 @@ abstract class StandardERC20Token extends ERC20
     /**
      * @param string $from
      * @param string $to
-     * @param float $amount
+     * @param string $amount
      * @return Transaction\Transaction
      */
-    public function transfer(string $from, string $to, float $amount, string $gasLimit = 'default', string $gasPrice = 'default')
+    public function transfer(string $from, string $to, string $amount, string $gasLimit = 'default', string $gasPrice = 'default')
     {
         $amount = Number::scaleUp($amount, $this->decimals());
         $data   = $this->buildTransferData($to, $amount);
@@ -140,10 +140,10 @@ abstract class StandardERC20Token extends ERC20
      * @param string $spender
      * @param string $from
      * @param string $to
-     * @param float $amount
+     * @param string $amount
      * @return Transaction\Transaction
      */
-    public function transferFrom(string $spender, string $from, string $to, float $amount, string $gasLimit = 'default', string $gasPrice = 'default')
+    public function transferFrom(string $spender, string $from, string $to, string $amount, string $gasLimit = 'default', string $gasPrice = 'default')
     {
         $amount = Number::scaleUp($amount, $this->decimals());
         $data   = $this->buildTransferFromData($from, $to, $amount);

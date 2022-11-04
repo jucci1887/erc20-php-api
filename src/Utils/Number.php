@@ -9,12 +9,12 @@ class Number
 {
     public static function scaleDown(string $number, int $decimals)
     {
-        return bcdiv($number, bcpow("10", strval($decimals)), $decimals);
+        return bcdiv($number, bcpow("10", strval($decimals)), 0);
     }
 
     public static function scaleUp(string $number, int $decimals): string
     {
-        return bcmul($number, bcpow("10", strval($decimals)));
+        return bcmul($number, bcpow("10", strval($decimals)),0);
     }
 
     public static function bigIntegerPow($base, $power)
