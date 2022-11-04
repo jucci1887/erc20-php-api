@@ -216,14 +216,14 @@ abstract class StandardERC20Token extends ERC20
         return isset($this->gasLimits[$action]) ? $this->gasLimits[$action] : $this->gasLimits['default'];
     }
 
-    public function getSafeGasPrice()
+    public function getSafeGasPrice($unit = '')
     {
         $gasPrice = $this->getEth()
                          ->gasPrice()
         ;
-
-        $modified = floatval(Number::fromWei($gasPrice, 'gwei')) + $this->gasPriceModifier;
-        return Number::toWei($modified, 'gwei')
+        if(empty($unit)) return $gasPrice;
+        $modified = floatval(Number::fromWei($gasPrice, $unit)) + $this->gasPriceModifier;
+        return Number::toWei($modified, $unit)
                      ->toString()
             ;
     }
