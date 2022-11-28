@@ -7,14 +7,14 @@ class Eth extends EthBase
     public function getTransactionCount(string $address, string $blockParameter = 'latest')
     {
         return $this->call('getTransactionCount', [$address, $blockParameter])
-                    ->toString()
+            ->toString()
             ;
     }
 
     public function gasPrice()
     {
         return $this->call('gasPrice')
-                    ->toString()
+            ->toString()
             ;
     }
 
@@ -26,5 +26,10 @@ class Eth extends EthBase
     public function getEthBalance(string $address)
     {
         return (string)$this->call('getBalance',[$address,'latest']);
+    }
+
+    public function getTransactionByHash(string $hxid)
+    {
+        return $this->call('getTransactionByHash',[$hxid]);
     }
 }

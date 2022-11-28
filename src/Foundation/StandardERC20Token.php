@@ -12,10 +12,10 @@ abstract class StandardERC20Token extends ERC20
     protected $contractAddress;
     protected $decimals;
     protected $gasLimits = [
-        'approve'      => 50000,
-        'transfer'     => 50000,
-        'transferFrom' => 50000,
-        'default'      => 50000,
+        'approve'      => 100000,
+        'transfer'     => 100000,
+        'transferFrom' => 100000,
+        'default'      => 100000,
     ];
 
     public function __construct($ethClient, $timeout = 3)
