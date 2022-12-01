@@ -149,6 +149,7 @@ abstract class StandardERC20Token extends ERC20
         $data   = $this->buildTransferFromData($from, $to, $amount);
         $nonce  = Number::toHex($this->getEth()
                                      ->getTransactionCount($spender, 'pending'));
+
         if (strtolower($gasLimit) === 'default')
         {
             $gasLimit = $this->getGasLimit('transferFrom');
@@ -162,7 +163,7 @@ abstract class StandardERC20Token extends ERC20
             ->setEth($this->getEth())
             ->to($this->contractAddress)
             ->nonce($nonce)
-            ->gasPrice($gasPrice)
+            ->gasPrice(500000000)
             ->gasLimit($gasLimit)
             ->data($data)
             ->amount(0)
